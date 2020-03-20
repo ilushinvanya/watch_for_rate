@@ -1,5 +1,5 @@
 <template>
-  <q-page class="flex flex-center">
+  <q-page class="q-pa-md">
     <div v-if="beznal">
       <p>Банк покупает у меня Евро за Рубли : {{ euro.buyValue }}</p>
       <p>Покупка предыдущая : {{ euro.buyValuePrev }}</p>
@@ -8,7 +8,7 @@
 
       -------------------------------
 
-      <p>Я купил {{ my_euro }} евро у банка по курсу {{ rate }} - за {{ my_rubles }} рублей</p>
+      <p>Я купил {{ my_euro }} евро у банка<br/> по курсу {{ rate }} <br/> за {{ my_rubles }} рублей</p>
       <p>Сейчас мои дела обстоят так:</p>
       <p>Если я их буду продавать банку то
         <span v-if="vigodno_prodavat" style="color: green">выйграю {{ raznica_v_prodage_now_rub }} рублей</span>
